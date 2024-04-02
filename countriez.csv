@@ -1,0 +1,250 @@
+name,code,date,day,month,year
+United States of America,USA,"July 4, 1776",4,7,1776
+Haiti,HTI,"January 1, 1804",1,1,1804
+Serbia,SRB,"February 15, 1804",15,2,1804
+Ecuador,ECU,"August 10, 1809",10,8,1809
+Colombia,COL,"July 20, 1810",20,7,1810
+Mexico,MEX,"September 16, 1810",16,9,1810
+Chile,CHL,"September 18, 1810",18,9,1810
+Paraguay,PRY,"May 15, 1811",15,5,1811
+Venezuela (Bolivarian Republic of),VEN,"July 5, 1811",5,7,1811
+Norway,NOR,"May 17, 1814",17,5,1814
+Argentina,ARG,"July 9, 1816",9,7,1816
+Greece,GRC,"March 25, 1821",25,3,1821
+Peru,PER,"July 28, 1821",28,7,1821
+Costa Rica,CRI,"September 15, 1821",15,9,1821
+El Salvador,SLV,"September 15, 1821",15,9,1821
+Guatemala,GTM,"September 15, 1821",15,9,1821
+Honduras,HND,"September 15, 1821",15,9,1821
+Nicaragua,NIC,"September 15, 1821",15,9,1821
+Brazil,BRA,"September 7, 1822",7,9,1822
+Bolivia (Plurinational State of),BOL,"August 6, 1825",6,8,1825
+Uruguay,URY,"August 25, 1825",25,8,1825
+Belgium,BEL,"July 21, 1831",21,7,1831
+Dominican Republic,DOM,"February 27, 1844",27,2,1844
+Liberia,LBR,"July 26, 1847",26,7,1847
+Canada,CAN,"July 1, 1867",1,7,1867
+Romania,ROU,"May 9, 1877",9,5,1877
+Philippines,PHL,"June 12, 1898",12,6,1898
+Australia,AUS,"January 1, 1901",1,1,1901
+Cuba,CUB,"May 20, 1902",20,5,1902
+Panama,PAN,"November 3, 1903",3,11,1903
+Bulgaria,BGR,"September 22, 1908",22,9,1908
+Mongolia,MNG,"December 29, 1911",29,12,1911
+Albania,ALB,"November 28, 1912",28,11,1912
+North Macedonia,MKD,"February 13, 1913",13,2,1913
+Finland,FIN,"December 6, 1917",6,12,1917
+Estonia,EST,"February 24, 1918",24,2,1918
+Georgia,GEO,"May 26, 1918",26,5,1918
+Poland,POL,"November 11, 1918",11,11,1918
+Ukraine,UKR,"January 22, 1919",22,1,1919
+Afghanistan,AFG,"August 19, 1919",19,8,1919
+Egypt,EGY,"February 28, 1922",28,2,1922
+Turkey,TUR,"October 29, 1923",29,10,1923
+South Africa,ZAF,"December 11, 1931",11,12,1931
+Saudi Arabia,SAU,"September 23, 1932",23,9,1932
+Iraq,IRQ,"October 3, 1932",3,10,1932
+Lebanon,LBN,"November 22, 1943",22,11,1943
+Iceland,ISL,"June 17, 1944",17,6,1944
+Belarus,BLR,"July 3, 1944",3,7,1944
+Korea (Democratic People's Republic of),PRK,"August 15, 1945",15,8,1945
+"Korea, Republic of",KOR,"August 15, 1945",15,8,1945
+Indonesia,IDN,"August 17, 1945",17,8,1945
+Viet Nam,VNM,"September 2, 1945",2,9,1945
+Switzerland,CHE,"April 17, 1946",17,4,1946
+Jordan,JOR,"May 25, 1946",25,5,1946
+Pakistan,PAK,"August 14, 1947",14,8,1947
+India,IND,"August 15, 1947",15,8,1947
+New Zealand,NZL,"November 27, 1947",27,11,1947
+Myanmar,MMR,"January 4, 1948",4,1,1948
+Sri Lanka,LKA,"February 4, 1948",4,2,1948
+Libya,LBY,"December 24, 1951",24,12,1951
+Lao People's Democratic Republic,LAO,"October 22, 1953",22,10,1953
+Cambodia,KHM,"November 9, 1953",9,11,1953
+Austria,AUT,"October 26, 1955",26,10,1955
+Morocco,MAR,"November 18, 1955",18,11,1955
+Sudan,SDN,"January 1, 1956",1,1,1956
+Tunisia,TUN,"March 20, 1956",20,3,1956
+Ghana,GHA,"March 6, 1957",6,3,1957
+Malaysia,MYS,"August 31, 1957",31,8,1957
+Guinea,GIN,"October 2, 1958",2,10,1958
+Cameroon,CMR,"January 1, 1960",1,1,1960
+Senegal,SEN,"April 4, 1960",4,4,1960
+Togo,TGO,"April 27, 1960",27,4,1960
+Madagascar,MDG,"June 26, 1960",26,6,1960
+"Congo, Democratic Republic of the",COD,"June 30, 1960",30,6,1960
+Somalia,SOM,"July 1, 1960",1,7,1960
+Benin,BEN,"August 1, 1960",1,8,1960
+Niger,NER,"August 3, 1960",3,8,1960
+Burkina Faso,BFA,"August 5, 1960",5,8,1960
+Côte d'Ivoire,CIV,"August 7, 1960",7,8,1960
+Chad,TCD,"August 11, 1960",11,8,1960
+Central African Republic,CAF,"August 13, 1960",13,8,1960
+Congo,COG,"August 15, 1960",15,8,1960
+Gabon,GAB,"August 17, 1960",17,8,1960
+Mali,MLI,"September 22, 1960",22,9,1960
+Cyprus,CYP,"October 1, 1960",1,10,1960
+Nigeria,NGA,"October 1, 1960",1,10,1960
+Mauritania,MRT,"November 28, 1960",28,11,1960
+Kuwait,KWT,"February 25, 1961",25,2,1961
+Sierra Leone,SLE,"April 27, 1961",27,4,1961
+"Tanzania, United Republic of",TZA,"December 9, 1961",9,12,1961
+Samoa,WSM,"January 1, 1962",1,1,1962
+Burundi,BDI,"July 1, 1962",1,7,1962
+Rwanda,RWA,"July 1, 1962",1,7,1962
+Algeria,DZA,"July 5, 1962",5,7,1962
+Jamaica,JAM,"August 6, 1962",6,8,1962
+Trinidad and Tobago,TTO,"August 31, 1962",31,8,1962
+Uganda,UGA,"October 9, 1962",9,10,1962
+Kenya,KEN,"December 12, 1963",12,12,1963
+Malawi,MWI,"July 6, 1964",6,7,1964
+Malta,MLT,"September 21, 1964",21,9,1964
+Zambia,ZMB,"October 24, 1964",24,10,1964
+Gambia,GMB,"February 18, 1965",18,2,1965
+Maldives,MDV,"July 26, 1965",26,7,1965
+Singapore,SGP,"August 9, 1965",9,8,1965
+Réunion,REU,"November 11, 1965",11,11,1965
+Guyana,GUY,"May 26, 1966",26,5,1966
+Botswana,BWA,"September 30, 1966",30,9,1966
+Lesotho,LSO,"October 4, 1966",4,10,1966
+Barbados,BRB,"November 30, 1966",30,11,1966
+Anguilla,AIA,"May 30, 1967",30,5,1967
+Yemen,YEM,"November 30, 1967",30,11,1967
+Nauru,NRU,"January 31, 1968",31,1,1968
+Mauritius,MUS,"March 12, 1968",12,3,1968
+Eswatini,SWZ,"September 6, 1968",6,9,1968
+Equatorial Guinea,GNQ,"October 12, 1968",12,10,1968
+Tonga,TON,"June 4, 1970",4,6,1970
+Fiji,FJI,"October 10, 1970",10,10,1970
+Bangladesh,BGD,"March 26, 1971",26,3,1971
+United Arab Emirates,ARE,"December 2, 1971",2,12,1971
+Bahrain,BHR,"December 16, 1971",16,12,1971
+Qatar,QAT,"December 18, 1971",18,12,1971
+Bahamas,BHS,"July 10, 1973",10,7,1973
+Guinea-Bissau,GNB,"September 24, 1973",24,9,1973
+Grenada,GRD,"February 7, 1974",7,2,1974
+Mozambique,MOZ,"June 25, 1975",25,6,1975
+Cabo Verde,CPV,"July 5, 1975",5,7,1975
+Comoros,COM,"July 6, 1975",6,7,1975
+Sao Tome and Principe,STP,"July 12, 1975",12,7,1975
+Papua New Guinea,PNG,"September 16, 1975",16,9,1975
+Angola,AGO,"November 11, 1975",11,11,1975
+Suriname,SUR,"November 25, 1975",25,11,1975
+Western Sahara,ESH,"February 27, 1976",27,2,1976
+Seychelles,SYC,"June 29, 1976",29,6,1976
+Djibouti,DJI,"June 27, 1977",27,6,1977
+Solomon Islands,SLB,"July 7, 1978",7,7,1978
+Tuvalu,TUV,"October 1, 1978",1,10,1978
+Dominica,DMA,"November 3, 1978",3,11,1978
+Saint Lucia,LCA,"February 22, 1979",22,2,1979
+Kiribati,KIR,"July 12, 1979",12,7,1979
+Saint Vincent and the Grenadines,VCT,"October 27, 1979",27,10,1979
+Zimbabwe,ZWE,"April 18, 1980",18,4,1980
+Vanuatu,VUT,"July 30, 1980",30,7,1980
+Belize,BLZ,"September 21, 1981",21,9,1981
+Antigua and Barbuda,ATG,"November 1, 1981",1,11,1981
+Saint Kitts and Nevis,KNA,"September 19, 1983",19,9,1983
+Norfolk Island,NFK,"October 15, 1983",15,10,1983
+Virgin Islands (British),VGB,"January 1, 1984",1,1,1984
+Lithuania,LTU,"March 11, 1990",11,3,1990
+Namibia,NAM,"March 21, 1990",21,3,1990
+Latvia,LVA,"May 4, 1990",4,5,1990
+Slovenia,SVN,"December 26, 1990",26,12,1990
+"Moldova, Republic of",MDA,"August 27, 1991",27,8,1991
+Kyrgyzstan,KGZ,"August 31, 1991",31,8,1991
+Uzbekistan,UZB,"September 1, 1991",1,9,1991
+Macao,MAC,"September 8, 1991",8,9,1991
+Tajikistan,TJK,"September 9, 1991",9,9,1991
+Armenia,ARM,"September 21, 1991",21,9,1991
+Croatia,HRV,"October 8, 1991",8,10,1991
+Azerbaijan,AZE,"October 18, 1991",18,10,1991
+Turkmenistan,TKM,"October 27, 1991",27,10,1991
+Kazakhstan,KAZ,"December 16, 1991",16,12,1991
+Bosnia and Herzegovina,BIH,"March 1, 1992",1,3,1992
+Russian Federation,RUS,"June 12, 1992",12,6,1992
+Slovakia,SVK,"July 17, 1992",17,7,1992
+Czechia,CZE,"January 1, 1993",1,1,1993
+Eritrea,ERI,"May 24, 1993",24,5,1993
+Montenegro,MNE,"May 21, 2006",21,5,2006
+South Sudan,SDS,"July 9, 2011",9,7,2011
+United Kingdom of Great Britain and Northern Ireland,GBR,Never Been Occupied,0,0,0
+Antarctica,ATA,Never Been Occupied,0,0,0
+China,CHN,Never Been Occupied,0,0,0
+Denmark,DNK,Never Been Occupied,0,0,0
+Ethiopia,ETH,Never Been Occupied,0,0,0
+France,FRA,Never Been Occupied,0,0,0
+Germany,DEU,Never Been Occupied,0,0,0
+Greenland,GRL,Never Been Occupied,0,0,0
+Hungary,HUN,Never Been Occupied,0,0,0
+Italy,ITA,Never Been Occupied,0,0,0
+Japan,JPN,Never Been Occupied,0,0,0
+Liechtenstein,LIE,Never Been Occupied,0,0,0
+Luxembourg,LUX,Never Been Occupied,0,0,0
+Monaco,MCO,Never Been Occupied,0,0,0
+Nepal,NPL,Never Been Occupied,0,0,0
+Netherlands,NLD,Never Been Occupied,0,0,0
+Portugal,PRT,Never Been Occupied,0,0,0
+Spain,ESP,Never Been Occupied,0,0,0
+Sweden,SWE,Never Been Occupied,0,0,0
+Thailand,THA,Never Been Occupied,0,0,0
+Åland Islands,ALA,Still Occupied,30,4,2024
+American Samoa,ASM,Still Occupied,30,4,2024
+Andorra,AND,Still Occupied,30,4,2024
+Aruba,ABW,Still Occupied,30,4,2024
+Bermuda,BMU,Still Occupied,30,4,2024
+Bhutan,BTN,Still Occupied,30,4,2024
+"Bonaire, Sint Eustatius and Saba",BES,Still Occupied,30,4,2024
+Bouvet Island,BVT,Still Occupied,30,4,2024
+British Indian Ocean Territory,IOT,Still Occupied,30,4,2024
+Brunei Darussalam,BRN,Still Occupied,30,4,2024
+Cayman Islands,CYM,Still Occupied,30,4,2024
+Christmas Island,CXR,Still Occupied,30,4,2024
+Cocos (Keeling) Islands,CCK,Still Occupied,30,4,2024
+Cook Islands,COK,Still Occupied,30,4,2024
+Curaçao,CUW,Still Occupied,30,4,2024
+Falkland Islands (Malvinas),FLK,Still Occupied,30,4,2024
+Faroe Islands,FRO,Still Occupied,30,4,2024
+French Guiana,GUF,Still Occupied,30,4,2024
+French Polynesia,PYF,Still Occupied,30,4,2024
+French Southern Territories,ATF,Still Occupied,30,4,2024
+Gibraltar,GIB,Still Occupied,30,4,2024
+Guadeloupe,GLP,Still Occupied,30,4,2024
+Guam,GUM,Still Occupied,30,4,2024
+Guernsey,GGY,Still Occupied,30,4,2024
+Heard Island and McDonald Islands,HMD,Still Occupied,30,4,2024
+Holy See,VAT,Still Occupied,30,4,2024
+Hong Kong,HKG,Still Occupied,30,4,2024
+Iran (Islamic Republic of),IRN,Still Occupied,30,4,2024
+Ireland,IRL,Still Occupied,30,4,2024
+Isle of Man,IMN,Still Occupied,30,4,2024
+Palestine,ISR,Still Occupied,30,4,2024
+Jersey,JEY,Still Occupied,30,4,2024
+Marshall Islands,MHL,Still Occupied,30,4,2024
+Martinique,MTQ,Still Occupied,30,4,2024
+Mayotte,MYT,Still Occupied,30,4,2024
+Micronesia (Federated States of),FSM,Still Occupied,30,4,2024
+Montserrat,MSR,Still Occupied,30,4,2024
+New Caledonia,NCL,Still Occupied,30,4,2024
+Niue,NIU,Still Occupied,30,4,2024
+Northern Mariana Islands,MNP,Still Occupied,30,4,2024
+Oman,OMN,Still Occupied,30,4,2024
+Palau,PLW,Still Occupied,30,4,2024
+"Palestine, State of",PSE,Still Occupied,30,4,2024
+Pitcairn,PCN,Still Occupied,30,4,2024
+Puerto Rico,PRI,Still Occupied,30,4,2024
+Saint Barthélemy,BLM,Still Occupied,30,4,2024
+"Saint Helena, Ascension and Tristan da Cunha",SHN,Still Occupied,30,4,2024
+Saint Martin (French part),MAF,Still Occupied,30,4,2024
+Saint Pierre and Miquelon,SPM,Still Occupied,30,4,2024
+San Marino,SMR,Still Occupied,30,4,2024
+Sint Maarten (Dutch part),SXM,Still Occupied,30,4,2024
+South Georgia and the South Sandwich Islands,SGS,Still Occupied,30,4,2024
+Svalbard and Jan Mayen,SJM,Still Occupied,30,4,2024
+Syrian Arab Republic,SYR,Still Occupied,30,4,2024
+"Taiwan, Province of China",TWN,Still Occupied,30,4,2024
+Timor-Leste,TLS,Still Occupied,30,4,2024
+Tokelau,TKL,Still Occupied,30,4,2024
+Turks and Caicos Islands,TCA,Still Occupied,30,4,2024
+United States Minor Outlying Islands,UMI,Still Occupied,30,4,2024
+Virgin Islands (U.S.),VIR,Still Occupied,30,4,2024
+Wallis and Futuna,WLF,Still Occupied,30,4,2024
