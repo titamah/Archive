@@ -18,7 +18,7 @@ Guatemala,GTM,"September 15, 1821",15,9,1821
 Honduras,HND,"September 15, 1821",15,9,1821
 Nicaragua,NIC,"September 15, 1821",15,9,1821
 Brazil,BRA,"September 7, 1822",7,9,1822
-Bolivia (Plurinational State of),BOL,"August 6, 1825",6,8,1825
+Bolivia,BOL,"August 6, 1825",6,8,1825
 Uruguay,URY,"August 25, 1825",25,8,1825
 Belgium,BEL,"July 21, 1831",21,7,1831
 Dominican Republic,DOM,"February 27, 1844",27,2,1844
@@ -47,10 +47,10 @@ Iraq,IRQ,"October 3, 1932",3,10,1932
 Lebanon,LBN,"November 22, 1943",22,11,1943
 Iceland,ISL,"June 17, 1944",17,6,1944
 Belarus,BLR,"July 3, 1944",3,7,1944
-Korea (Democratic People's Republic of),PRK,"August 15, 1945",15,8,1945
-"Korea, Republic of",KOR,"August 15, 1945",15,8,1945
+North Korea,PRK,"August 15, 1945",15,8,1945
+South Korea,KOR,"August 15, 1945",15,8,1945
 Indonesia,IDN,"August 17, 1945",17,8,1945
-Viet Nam,VNM,"September 2, 1945",2,9,1945
+Vietnam,VNM,"September 2, 1945",2,9,1945
 Switzerland,CHE,"April 17, 1946",17,4,1946
 Jordan,JOR,"May 25, 1946",25,5,1946
 Pakistan,PAK,"August 14, 1947",14,8,1947
@@ -59,7 +59,7 @@ New Zealand,NZL,"November 27, 1947",27,11,1947
 Myanmar,MMR,"January 4, 1948",4,1,1948
 Sri Lanka,LKA,"February 4, 1948",4,2,1948
 Libya,LBY,"December 24, 1951",24,12,1951
-Lao People's Democratic Republic,LAO,"October 22, 1953",22,10,1953
+Laos,LAO,"October 22, 1953",22,10,1953
 Cambodia,KHM,"November 9, 1953",9,11,1953
 Austria,AUT,"October 26, 1955",26,10,1955
 Morocco,MAR,"November 18, 1955",18,11,1955
@@ -72,7 +72,7 @@ Cameroon,CMR,"January 1, 1960",1,1,1960
 Senegal,SEN,"April 4, 1960",4,4,1960
 Togo,TGO,"April 27, 1960",27,4,1960
 Madagascar,MDG,"June 26, 1960",26,6,1960
-"Congo, Democratic Republic of the",COD,"June 30, 1960",30,6,1960
+Democratic Repub. of Congo,COD,"June 30, 1960",30,6,1960
 Somalia,SOM,"July 1, 1960",1,7,1960
 Benin,BEN,"August 1, 1960",1,8,1960
 Niger,NER,"August 3, 1960",3,8,1960
@@ -88,13 +88,13 @@ Nigeria,NGA,"October 1, 1960",1,10,1960
 Mauritania,MRT,"November 28, 1960",28,11,1960
 Kuwait,KWT,"February 25, 1961",25,2,1961
 Sierra Leone,SLE,"April 27, 1961",27,4,1961
-"Tanzania, United Republic of",TZA,"December 9, 1961",9,12,1961
+Tanzania,TZA,"December 9, 1961",9,12,1961
 Samoa,WSM,"January 1, 1962",1,1,1962
 Burundi,BDI,"July 1, 1962",1,7,1962
 Rwanda,RWA,"July 1, 1962",1,7,1962
 Algeria,DZA,"July 5, 1962",5,7,1962
 Jamaica,JAM,"August 6, 1962",6,8,1962
-Trinidad and Tobago,TTO,"August 31, 1962",31,8,1962
+Trinidad & Tobago,TTO,"August 31, 1962",31,8,1962
 Uganda,UGA,"October 9, 1962",9,10,1962
 Kenya,KEN,"December 12, 1963",12,12,1963
 Malawi,MWI,"July 6, 1964",6,7,1964
@@ -138,19 +138,19 @@ Tuvalu,TUV,"October 1, 1978",1,10,1978
 Dominica,DMA,"November 3, 1978",3,11,1978
 Saint Lucia,LCA,"February 22, 1979",22,2,1979
 Kiribati,KIR,"July 12, 1979",12,7,1979
-Saint Vincent and the Grenadines,VCT,"October 27, 1979",27,10,1979
+St. Vincent & the Grenadines,VCT,"October 27, 1979",27,10,1979
 Zimbabwe,ZWE,"April 18, 1980",18,4,1980
 Vanuatu,VUT,"July 30, 1980",30,7,1980
 Belize,BLZ,"September 21, 1981",21,9,1981
-Antigua and Barbuda,ATG,"November 1, 1981",1,11,1981
-Saint Kitts and Nevis,KNA,"September 19, 1983",19,9,1983
+Antigua & Barbuda,ATG,"November 1, 1981",1,11,1981
+St. Kitts & Nevis,KNA,"September 19, 1983",19,9,1983
 Norfolk Island,NFK,"October 15, 1983",15,10,1983
 Virgin Islands (British),VGB,"January 1, 1984",1,1,1984
 Lithuania,LTU,"March 11, 1990",11,3,1990
 Namibia,NAM,"March 21, 1990",21,3,1990
 Latvia,LVA,"May 4, 1990",4,5,1990
 Slovenia,SVN,"December 26, 1990",26,12,1990
-"Moldova, Republic of",MDA,"August 27, 1991",27,8,1991
+Moldova,MDA,"August 27, 1991",27,8,1991
 Kyrgyzstan,KGZ,"August 31, 1991",31,8,1991
 Uzbekistan,UZB,"September 1, 1991",1,9,1991
 Macao,MAC,"September 8, 1991",8,9,1991
@@ -160,14 +160,14 @@ Croatia,HRV,"October 8, 1991",8,10,1991
 Azerbaijan,AZE,"October 18, 1991",18,10,1991
 Turkmenistan,TKM,"October 27, 1991",27,10,1991
 Kazakhstan,KAZ,"December 16, 1991",16,12,1991
-Bosnia and Herzegovina,BIH,"March 1, 1992",1,3,1992
+Bosnia & Herzegovina,BIH,"March 1, 1992",1,3,1992
 Russian Federation,RUS,"June 12, 1992",12,6,1992
 Slovakia,SVK,"July 17, 1992",17,7,1992
 Czechia,CZE,"January 1, 1993",1,1,1993
 Eritrea,ERI,"May 24, 1993",24,5,1993
 Montenegro,MNE,"May 21, 2006",21,5,2006
 South Sudan,SDS,"July 9, 2011",9,7,2011
-United Kingdom of Great Britain and Northern Ireland,GBR,Never Been Occupied,0,0,0
+United Kingdom,GBR,Never Been Occupied,0,0,0
 Antarctica,ATA,Never Been Occupied,0,0,0
 China,CHN,Never Been Occupied,0,0,0
 Denmark,DNK,Never Been Occupied,0,0,0
@@ -217,7 +217,7 @@ Hong Kong,HKG,Still Occupied,30,10,2025
 Iran (Islamic Republic of),IRN,Still Occupied,30,10,2025
 Ireland,IRL,Still Occupied,30,10,2025
 Isle of Man,IMN,Still Occupied,30,10,2025
-Palestine,ISR,Still Occupied,30,10,2025
+Palestine,PSE,Still Occupied,30,10,2025
 Jersey,JEY,Still Occupied,30,10,2025
 Marshall Islands,MHL,Still Occupied,30,10,2025
 Martinique,MTQ,Still Occupied,30,10,2025
@@ -229,10 +229,10 @@ Niue,NIU,Still Occupied,30,10,2025
 Northern Mariana Islands,MNP,Still Occupied,30,10,2025
 Oman,OMN,Still Occupied,30,10,2025
 Palau,PLW,Still Occupied,30,10,2025
-"Palestine, State of",PSE,Still Occupied,30,10,2025
+Palestine,PSE,Still Occupied,30,10,2025
 Pitcairn,PCN,Still Occupied,30,10,2025
 Puerto Rico,PRI,Still Occupied,30,10,2025
-Saint Barthélemy,BLM,Still Occupied,30,10,2025
+St. Barthélemy,BLM,Still Occupied,30,10,2025
 "Saint Helena, Ascension and Tristan da Cunha",SHN,Still Occupied,30,10,2025
 Saint Martin (French part),MAF,Still Occupied,30,10,2025
 Saint Pierre and Miquelon,SPM,Still Occupied,30,10,2025
@@ -241,10 +241,10 @@ Sint Maarten (Dutch part),SXM,Still Occupied,30,10,2025
 South Georgia and the South Sandwich Islands,SGS,Still Occupied,30,10,2025
 Svalbard and Jan Mayen,SJM,Still Occupied,30,10,2025
 Syrian Arab Republic,SYR,Still Occupied,30,10,2025
-"Taiwan, Province of China",TWN,Still Occupied,30,10,2025
+Taiwan,TWN,Still Occupied,30,10,2025
 Timor-Leste,TLS,Still Occupied,30,10,2025
 Tokelau,TKL,Still Occupied,30,10,2025
 Turks and Caicos Islands,TCA,Still Occupied,30,10,2025
 United States Minor Outlying Islands,UMI,Still Occupied,30,10,2025
 Virgin Islands (U.S.),VIR,Still Occupied,30,10,2025
-Wallis and Futuna,WLF,Still Occupied,30,10,2025
+Wallis & Futuna,WLF,Still Occupied,30,10,2025
