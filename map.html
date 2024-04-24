@@ -1,0 +1,345 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="world.geojson"></script>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://use.typekit.net/mzc1vaa.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<!-- Create an element where the map will take place -->
+<body>
+<div id="main">
+  <h1 id="title">Years of Independance</h1>
+  <p id="subtitle"> Hover over this interactive map to see when each country recieved their independance and became <br>recognized as a nation. Click on a country to reveal additional information.</p>
+  <svg id="map" width="1000" height="700"></svg>
+  <svg id="timeline" width="1000" height="20">
+    <h5 id="begin">1776</h5>
+    <h5 id="end">Today</h5>
+    <h5 id="independance"></h5>
+  </svg>
+    <h3 id="label"></h3>
+  <svg id="date" width="2.5px" height="20"></svg>
+  <!-- <h4 id="date">what</h4> -->
+</div>
+<div id="popup" class="hidden">
+  <i id="x" class="material-icons" style="font-size:36px">close</i>
+  <div id="Name">
+    <h2 id="countryName">About Country  <span id="Occupied">July 4th, 1776</span> </h2>
+  </div>
+<img  id="Flag" alt="flag" src="">
+<h4 id="about">About Country </h4>
+<div class="info" id="Capital"> 
+  <h4>Capital: <br></h4>
+<text id="Cap"> n/a </text>
+</div>
+<div class="info" id="Population"> 
+<h4>Population: <br></h4>
+<text id="Pop"> n/a </text>
+</div>
+<div class="info" id="Languages"> 
+<h4>Official Language(s): <br></h4>
+<span> n/a </span>
+</div>
+</div>
+<div id="footer">
+  <div id="me"> © TITAMAH SIMPSON </div>
+</div>
+</body>
+
+
+<script>
+
+// The svg
+var svg = d3.select("#map"),
+  width = +svg.attr("width"),
+  height = +svg.attr("height");
+
+// Map and projection
+var path = d3.geoPath();
+var projection = d3.geoMercator()
+  .scale(70)
+  .center([0,20])
+  .translate([width / 2, height / 2]);
+  
+  projection.fitSize([width,height], {
+    type: "Polygon",
+    coordinates: [[ 
+      [-179.999,84] , 
+      [-179.999,-57] , 
+      [179.999,-57] , 
+      [179.999,84], 
+      [-179.999,84] 
+     ]]
+   })
+
+
+  //Timeline
+  var timeline = d3.select("#timeline")
+  width = +timeline.attr("width"),
+  height = +timeline.attr("height");
+
+  //Labeling
+  var label = d3.select("#label");
+  label.transition()
+      .duration(200);
+
+  function updateLabel(text) {
+    label.text(text);
+  }
+
+  var independance = d3.select("#independance");
+  independance.transition()
+      .duration(200);
+  function showDate(text) {
+    independance.text(text);
+  }
+
+
+// Data and color scale
+var data = d3.map();
+var colorScale = d3.scaleLinear()
+  .domain([0, 3500])
+  .range(["#FFFFFF", "#0040a6"])
+
+  const dateFromColonization = (day, month, year) =>{
+    if( day == 0 && month == 0 && year == 0) {
+      return 0;
+    }
+    // Create Date objects for August 5, 1498 and the given date
+    var startDate = new Date(1776, 6, 4); // Note: JavaScript months are zero-based (0 = January, 1 = February, ...)
+    var endDate = new Date(year, month - 1, day); // Subtract 1 from the month because months are zero-based
+
+    // Calculate the difference in months
+    var yearsDifference = endDate.getFullYear() - startDate.getFullYear();
+    var monthsDifference = endDate.getMonth() - startDate.getMonth();
+    var totalMonthsDifference = yearsDifference * 12 + monthsDifference;
+    return totalMonthsDifference + 500;
+  }
+//Create timeline gradient from colorScale
+var defs = timeline.append("defs");
+
+var gradient = defs.append("linearGradient")
+  .attr("id", "linearGradient");
+
+gradient.append("stop")
+.attr("offset", "0%")
+.attr("stop-color", colorScale(500))
+.attr("stop-opacity", 1);
+
+gradient.append("stop")
+.attr("offset", "100%")
+.attr("stop-color", colorScale(3500))
+.attr("stop-opacity", 1);
+
+let indepData = [];
+
+var getPlot = function(c) {
+  if (c.year == 0) {
+    d3.select("#date")
+      .style("background-color", "rgba(255,255,255,0)")
+    return window.innerWidth/2
+  } else  if (c.year == 2025) {
+    d3.select("#date")
+      .style("background-color", "rgba(255,255,255,0)")
+    return window.innerWidth/2;
+  } else 
+  d3.select("#date")
+      .style("background-color", "rgba(255,255,255,1)")
+var total = (dateFromColonization(c.day, c.month, c.year) - 500) / 3000;
+var startingPoint = window.innerWidth/2 - 500;
+return (total * 1000) + startingPoint;
+}
+  
+
+d3.select("#x").on("click", function() {
+  d3.select("#popup").classed("hidden", true);
+  d3.select("#main").style("transform", "unset");
+})
+
+// Load external data and boot
+d3.queue()
+  .defer(d3.json, "https://raw.githubusercontent.com/titamah/interactivemap/main/world.geojson")
+  .defer(d3.csv, "https://raw.githubusercontent.com/titamah/interactivemap/main/countriez.csv", function(d) { data.set(d.code, +dateFromColonization(d.day, d.month, d.year)); indepData.push(d);})
+  .await(ready);
+
+function ready(error, topo) {
+
+  let mouseOver = function(d) {
+    var currId = this.id;
+    var currCountry = indepData.find(c=> c.code == currId);
+    var text = currCountry.name;
+    updateLabel(text);
+    showDate(currCountry.date);
+    var x = getPlot(currCountry);
+    var dateX = getPlot(currCountry) - independance.node().offsetWidth/2;
+    independance.style("left", dateX + "px");
+    independance.style("color", "unset");
+    d3.select("#date")
+      .style("left", x)
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .5)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("opacity", 1)
+}
+
+  let mouseLeave = function(d) {
+    updateLabel("");
+    independance.style("color", "rgba(0,0,0,0)")
+    d3.select("#date")
+      .style("left", -10)
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", 1)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("opacity", 1)
+  }
+
+  var desc = "";
+  var url = "";
+  let getDescription = async function(name){
+    const options = {
+  method: 'GET',
+  url: 'https://wiki-briefs.p.rapidapi.com/search',
+  params: {
+    q: name
+  },
+  headers: {
+    'X-RapidAPI-Key': '8735f919f9mshfa4fe31c492af06p162f63jsnfa3a109f04f9',
+    'X-RapidAPI-Host': 'wiki-briefs.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	var results = response.data;
+  url = results.url;
+  desc = results.summary.join(" ");
+  console.log(desc);
+} catch (error) {
+	console.error(error);
+}
+  }
+
+  let onClick = async function(d) {
+    d3.select("body").style("cursor","wait");
+    var currId = this.id;
+    var currCountry = indepData.find(c=> c.code == currId);
+
+    var pop = d3.select('#popup').selectAll("*");
+
+    pop.style("opacity", .75);
+    await getDescription(currCountry.name);
+    pop.style("opacity", 1);
+
+    var flagSrc = "";
+    var cap = "";
+    var pop = "";
+    var langs = [];
+    var apiUrl = "https://restcountries.com/v3.1/alpha/"
+
+    fetch(apiUrl + currId + "/").then(response => {
+      return response.json();
+    }).then(data => {
+    var info = data[0];
+      flagSrc = info.flags.svg;
+      cap = info.capital[0];
+      pop = info.population.toLocaleString('en', {useGrouping:true})
+      langs = Object.values(info.languages);
+
+
+    var name = d3.select("#countryName");
+    name.text(currCountry.name).append("span")
+    .text(currCountry.date);
+
+    var flag = d3.select('#Flag');
+    flag.node().src = flagSrc;
+
+    var blurb = d3.select('#Blurb')
+    .text(desc)
+
+    d3.select('#link').attr("href", url);
+
+    d3.selectAll("#Languages span").remove();
+    var languages = d3.select('#Languages');
+    langs.forEach(element => {
+    languages.append("span")
+    .text(element);
+    });  
+
+    var capital = d3.select('#Cap');
+    capital.text(cap);
+    var population = d3.select('#Pop');
+    population.text(pop);
+    
+    d3.select("body").style("cursor","unset");
+    d3.select("#popup").classed("hidden", false);
+    d3.select("#main").style("transform", "translateX(-200px)");
+
+
+
+    }).catch(err => {
+    console.log("oops");
+    console.log(this)
+    });
+  }
+
+  // Draw the map
+  svg.append("g")
+    .selectAll("path")
+    .data(topo.features)
+    .enter()
+    .append("path")
+      // draw each country
+      .attr("d", d3.geoPath()
+        .projection(projection)
+      )
+      // set the color of each country
+      .attr("fill", function (d) {
+        if(dateFromColonization(d.day, d.month, d.year) <= 500){
+        d.total = 250;
+        } else if (dateFromColonization(d.day, d.month, d.year) > 3500) {
+        d.total = 3500;
+        } else {
+        d.total = data.get(d.id) || 250;
+        }
+        return colorScale(d.total);
+      })
+      // set the id of each country
+      .attr("id", function (d) {
+        return d.id;
+      })
+      // .style("stroke", "#828282")
+      .attr("class", function(d){ return "Country" } )
+      .style("opacity", 1)
+      .on("mouseover", mouseOver )
+      .on("mouseleave", mouseLeave )
+      .on("click", onClick)
+
+  //Draw the timeline
+  timeline.append("rect")
+  .attr('width', 1000)
+  .attr('height', 20)
+  .attr('fill', "url(#linearGradient)");
+
+  
+
+
+
+    }
+
+</script>
