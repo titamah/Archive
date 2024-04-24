@@ -49,6 +49,9 @@
 <span> n/a </span>
 </div>
 </div>
+<div id="footer">
+  <div id="me"> © TITAMAH SIMPSON </div>
+</div>
 </body>
 
 
@@ -158,6 +161,7 @@ return (total * 1000) + startingPoint;
 
 d3.select("#x").on("click", function() {
   d3.select("#popup").classed("hidden", true);
+  d3.select("#main").style("transform", "unset");
 })
 
 // Load external data and boot
@@ -275,6 +279,7 @@ try {
     langs.forEach(element => {
     languages.append("span")
     .text(element);
+    });  
 
     var capital = d3.select('#Cap');
     capital.text(cap);
@@ -283,7 +288,7 @@ try {
     
     d3.select("body").style("cursor","unset");
     d3.select("#popup").classed("hidden", false);
-    });
+    d3.select("#main").style("transform", "translateX(-200px)");
 
 
 
